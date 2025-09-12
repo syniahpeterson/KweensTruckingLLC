@@ -8,6 +8,7 @@ import Services from "./sections/Services.jsx";
 import Testimonials from "./sections/Testimonials.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import Divider from "./components/Divider.jsx";
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Divider />
       <Services />
+      <Divider />
       <Testimonials />
+      <Divider />
       <Contact />
       <Footer />
     </>

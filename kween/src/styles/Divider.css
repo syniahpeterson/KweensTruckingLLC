@@ -1,0 +1,7 @@
+.section-divider {
+  width: 80%;
+  max-width: 1000px;
+  height: 1px;
+  background-color: var(--border-divider);
+  margin: 3rem auto;
+}
