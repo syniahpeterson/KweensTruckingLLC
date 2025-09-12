@@ -6,6 +6,7 @@ import {
   FaTimes,
   FaCrown,
   FaHome,
+  FaInfoCircle,
   FaTruckMoving,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -100,7 +101,7 @@ const Navbar = () => {
     <nav role="navigation" className={scrolled ? "scrolled" : ""}>
       {/* Brand */}
       <div className="nav-brand">
-        <a href="#home">
+        <a href="#Home">
           <img src={navImg} alt="Kweens Trucking Logo" />
         </a>
         <h2>Kweens Trucking</h2>
@@ -115,6 +116,15 @@ const Navbar = () => {
             className={activeSection === "Home" ? "active" : ""}
           >
             <FaHome /> Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#About"
+            role="menuitem"
+            className={activeSection === "About" ? "active" : ""}
+          >
+            <FaInfoCircle /> About
           </a>
         </li>
         <li>
@@ -180,6 +190,11 @@ const Navbar = () => {
           <li>
             <a href="#Home" onClick={handleLinkClick} role="menuitem">
               <FaHome /> Home
+            </a>
+          </li>
+          <li>
+            <a href="#About" onClick={handleLinkClick} role="menuitem">
+              <FaInfoCircle /> About
             </a>
           </li>
           <li>
