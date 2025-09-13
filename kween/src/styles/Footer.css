@@ -1,3 +1,114 @@
-#footer {
-    color: violet;
+/* Footer Base */
+.footer {
+  background-color: var(--card-color);
+  color: var(--text-primary);
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid var(--border-divider);
+}
+
+/* Layout */
+.footer-brand,
+.footer-info,
+.footer-top {
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.footer-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.footer-brand h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Footer Slogan */
+.footer-slogan {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-top: 0.2rem;
+}
+
+/* Contact Info */
+.footer-info p {
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.footer-info .icon {
+  color: var(--accent-color);
+}
+
+.footer-info a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: var(--accent-color);
+}
+
+/* Back to Top */
+.footer-top button {
+  background: var(--accent-color);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.footer-top button:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: var(--accent-color-hover, #b78cdb);
+}
+.footer-top svg {
+  font-size: 1.2rem;
+}
+
+/* Bottom Divider */
+.footer-bottom {
+  border-top: 1px solid var(--border-divider);
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+}
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.footer-bottom .crown {
+  color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-info p {
+    font-size: 0.9rem;
+  }
+  .footer-slogan {
+    font-size: 0.85rem;
+    text-align: center;
+  }
 }
