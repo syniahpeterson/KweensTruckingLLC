@@ -15,7 +15,11 @@ const Footer = () => {
         <img src={footerLogo} alt="Kweens Trucking Logo" />
         <div>
           <h3>Kweens Trucking</h3>
-          <a href="#About"><p className="footer-slogan"><FaCrown /> Hauling with Royal Precision <FaCrown /></p></a>
+          <a href="#About">
+            <p className="footer-slogan">
+              <FaCrown /> Hauling with Royal Precision <FaCrown />
+            </p>
+          </a>
         </div>
       </div>
 
